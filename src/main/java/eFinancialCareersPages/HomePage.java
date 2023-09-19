@@ -19,6 +19,8 @@ public class HomePage {
     private By submitCredentialsButton = By.xpath("//button[text()='Submit']");
     private By jobSearchField = By.xpath("//input[@placeholder='Job title, keyword or company']");
     private By locationField = By.xpath("//input[@placeholder='Location']");
+    private By profileButton = By.xpath("//div[@id='button-basic']");
+    private By profileName = By.xpath("//*[@id=\"dropdown-avatar-container\"]/div/span[1]");
     public HomePage(WebDriver driver){
         this.driver = driver;
     }
@@ -39,6 +41,14 @@ public class HomePage {
         WebElement passwordField = wait.until(ExpectedConditions.visibilityOfElementLocated(passwordInput));
         passwordField.sendKeys(password);
         driver.findElement(submitCredentialsButton).click();
+    }
+    public void clickProfileButton(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement profile = wait.until(ExpectedConditions.visibilityOfElementLocated(profileButton));
+        profile.click();
+    }
+    public String checkLoginStatus(){
+        return driver.findElement(profileName).getText();
     }
     public JobSearchPage jobSearch(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
