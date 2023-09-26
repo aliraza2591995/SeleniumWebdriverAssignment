@@ -9,7 +9,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class JobSearchTest extends BaseTest{
-    private By hiddenElement = By.xpath("//*[@id=\"fsp-fileUpload\"]");
+    private final By hiddenElement = By.xpath("//*[@id=\"fsp-fileUpload\"]");
 
     @Test
     public void testJobSearch(){
@@ -19,6 +19,9 @@ public class JobSearchTest extends BaseTest{
 
         homepage.enterEmail("aliomessi.19@gmail.com");
         homepage.enterPassword("Aliraza.10");
+
+        System.out.println(homepage.getHomePageText());
+
         homepage.clickProfileButton();
         System.out.println(homepage.checkLoginStatus());
         assertEquals(homepage.checkLoginStatus(), "Ali Raza", "Login failed");
@@ -38,10 +41,15 @@ public class JobSearchTest extends BaseTest{
         jobPage.loadNewCV();
 
         System.out.println(jobPage.fileDropAreaText());
+        System.out.println(jobPage.fileDropAreaText());
         assertEquals(jobPage.fileDropAreaText(), "Select Files to Upload", "File drop area not found");
 
         jobPage.unhiddenUploadElement(hiddenElement);
 
         jobPage.uploadCV();
+        System.out.println(jobPage.getCvTitle());
+        assertEquals(jobPage.getCvTitle(), "Ali-s Resume.pdf", "CV upload failed");
+
+        jobPage.apply();
     }
 }

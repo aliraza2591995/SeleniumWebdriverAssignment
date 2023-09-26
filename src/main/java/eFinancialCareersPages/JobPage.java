@@ -10,21 +10,23 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class JobPage {
-    private WebDriver driver;
-    private By applyLink = By.xpath("(//button[@class='btn btn-small btn-primary ng-star-inserted'])[1]");
-    private By uploadLink = By.xpath("//button[@class='btn btn-outline btn-medium'][1]");
-    private By fileDropArea = By.xpath("//input[@id='fsp-fileUpload']");
-    private By modalTitle = By.xpath("//h4[@id='modal-title']");
-    private By fileDropAreaText = By.xpath("//div[@class='fsp-drop-area__title fsp-text__title']");
-    private By uploadButton = By.xpath("//*[@id=\"__filestack-picker\"]/div/div/div[1]/div[2]/div[3]/div/span[3]/div/span");
-    private By clearCV = By.cssSelector("body > modal-container > div.efc-standard-modal.modal-dialog > div > efc-job-application-container > div > efc-job-application > div > form > div:nth-child(2) > div.row > efc-form-dropdown-input > div > span > efc-icon.close > span > svg");
-    private By newCVlink = By.xpath("//*[@id=\"dropdown-file-list\"]/li[1]/div");
+    private final WebDriver driver;
+    private final By applyLink = By.xpath("(//button[@class='btn btn-small btn-primary ng-star-inserted'])[1]");
+    private final By uploadLink = By.xpath("//button[@class='btn btn-outline btn-medium'][1]");
+    private final By fileDropArea = By.xpath("//input[@id='fsp-fileUpload']");
+    private final By modalTitle = By.xpath("//h4[@id='modal-title']");
+    private final By fileDropAreaText = By.xpath("//div[@class='fsp-drop-area__title fsp-text__title']");
+    private final By uploadButton = By.xpath("//*[@id=\"__filestack-picker\"]/div/div/div[1]/div[2]/div[3]/div/span[3]/div/span");
+    private final By clearCV = By.cssSelector("body > modal-container > div.efc-standard-modal.modal-dialog > div > efc-job-application-container > div > efc-job-application > div > form > div:nth-child(2) > div.row > efc-form-dropdown-input > div > span > efc-icon.close > span > svg");
+    private final By newCVlink = By.xpath("//*[@id=\"dropdown-file-list\"]/li[1]/div");
+    private final By CvTitle = By.xpath("/html/body/modal-container/div[2]/div/efc-job-application-container/div/efc-job-application/div/form/div[2]/div[3]/efc-form-dropdown-input/div/span/span/span[1]");
+    private final By apply = By.xpath("//button[@type='submit']");
     public JobPage(WebDriver driver) {
         this.driver = driver;
     }
 
     public void applyForJob() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement applyElement = wait.until(ExpectedConditions.visibilityOfElementLocated(applyLink));
         applyElement.click();
     }
@@ -75,5 +77,15 @@ public class JobPage {
         clickUploadCV();
         wait.until(ExpectedConditions.visibilityOfElementLocated(newCVlink));
         driver.findElement(newCVlink).click();
+    }
+    public String getCvTitle(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(CvTitle));
+        return driver.findElement(CvTitle).getText();
+    }
+    public void apply(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebElement applyLink = wait.until(ExpectedConditions.elementToBeClickable(apply));
+        applyLink.click();
     }
 }

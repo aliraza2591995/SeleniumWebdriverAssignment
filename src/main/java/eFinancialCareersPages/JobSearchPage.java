@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class JobSearchPage {
-    private WebDriver driver;
-    private By searchResultText = By.xpath("//h1[contains(text(), 'QA Engineer')]");
-    private By jobLink = By.xpath("//*[@id=\"rbVRgNtRyil1iTia\"]/h3");
+    private final WebDriver driver;
+    private final By searchResultText = By.xpath("//h1[contains(text(), 'QA Engineer')]");
+    private final By jobLink = By.xpath("//*[@id=\"rbVRgNtRyil1iTia\"]");
     public JobSearchPage(WebDriver driver){
         this.driver = driver;
     }
@@ -21,9 +21,9 @@ public class JobSearchPage {
         return searchResultElement.getText();
     }
     public JobPage clickJobLink(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        WebElement jobLinkElement = wait.until(ExpectedConditions.visibilityOfElementLocated(jobLink));
-        jobLinkElement.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(jobLink));
+        driver.findElement(jobLink).click();
         return new JobPage(driver);
     }
 }
