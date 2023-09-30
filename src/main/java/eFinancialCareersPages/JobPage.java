@@ -79,7 +79,7 @@ public class JobPage {
         driver.findElement(newCVlink).click();
     }
     public String getCvTitle(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.visibilityOfElementLocated(CvTitle));
         return driver.findElement(CvTitle).getText();
     }

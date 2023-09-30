@@ -1,6 +1,7 @@
 package eFinancialCareersTests;
 
 import eFinancialCareersPages.HomePage;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -12,7 +13,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setup(){
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("https://www.efinancialcareers.com/");
         homepage = new HomePage(driver);
