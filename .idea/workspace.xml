@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7674a7ff-c18f-4fee-85d4-99c1e0c205ba" name="Changes" comment="Added WebDriverManager.chromedriver().setup();" />
+    <list default="true" id="7674a7ff-c18f-4fee-85d4-99c1e0c205ba" name="Changes" comment="Added WebDriverManager.chromedriver().setup();">
+      <change afterPath="$PROJECT_DIR$/src/main/java/eFinancialCareersPages/WDM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/JobSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/JobApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/SignInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/SignInTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -40,6 +54,11 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar!/io/github/bonigarcia/wdm/WebDriverManager.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar!/io/github/bonigarcia/wdm/managers/ChromeDriverManager.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/4.11.0/selenium-support-4.11.0.jar!/org/openqa/selenium/support/ui/FluentWait.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -55,7 +74,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "A:/Em/JavaAssignement2",
+    "last_directory_selection": "A:/Em/SeleniumWebdriverAssignment/src/main/java/eFinancialCareersPages",
+    "last_opened_file_path": "A:/Em/SeleniumWebdriverAssignment",
     "onboarding.tips.debug.path": "A:/Em/SeleniumWebdriverAssignment/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -71,9 +91,16 @@
       <recent name="A:\Em\SeleniumWebdriverAssignment\src\main\java" />
       <recent name="A:\Em\SeleniumWebdriverAssignment" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="eFinancialCareersPages" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.JobSearchTest">
-    <configuration name="JobSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.JobApplicationTest.testJobSearch">
+    <configuration name="JobApplicationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver_java" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +109,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="eFinancialCareersTests" />
-      <option name="MAIN_CLASS_NAME" value="eFinancialCareersTests.JobSearchTest" />
+      <option name="MAIN_CLASS_NAME" value="eFinancialCareersTests.JobApplicationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobApplicationTest.testJobSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="webdriver_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eFinancialCareersTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eFinancialCareersTests" />
+      <option name="MAIN_CLASS_NAME" value="eFinancialCareersTests.JobApplicationTest" />
+      <option name="METHOD_NAME" value="testJobSearch" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -107,10 +152,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SignInTest.testSignIn" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="webdriver_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eFinancialCareersTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eFinancialCareersTests" />
+      <option name="MAIN_CLASS_NAME" value="eFinancialCareersTests.SignInTest" />
+      <option name="METHOD_NAME" value="testSignIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.JobSearchTest" />
+        <item itemvalue="TestNG.JobApplicationTest.testJobSearch" />
         <item itemvalue="TestNG.SignInTest" />
+        <item itemvalue="TestNG.SignInTest.testSignIn" />
+        <item itemvalue="TestNG.JobApplicationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696112033990</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added WebDriverManager.chromedriver().setup();">
+      <option name="closed" value="true" />
+      <created>1696112212521</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696112212521</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

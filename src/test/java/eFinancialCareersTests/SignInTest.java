@@ -1,7 +1,6 @@
 package eFinancialCareersTests;
 
 import org.testng.annotations.Test;
-
 import static org.testng.Assert.assertEquals;
 
 public class SignInTest extends BaseTest {

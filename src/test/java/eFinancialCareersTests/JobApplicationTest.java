@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class JobSearchTest extends BaseTest{
+public class JobApplicationTest extends BaseTest{
     private final By hiddenElement = By.xpath("//*[@id=\"fsp-fileUpload\"]");
 
     @Test

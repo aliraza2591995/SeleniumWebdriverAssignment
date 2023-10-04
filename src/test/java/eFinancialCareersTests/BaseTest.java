@@ -1,11 +1,11 @@
 package eFinancialCareersTests;
 
 import eFinancialCareersPages.HomePage;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import eFinancialCareersPages.WDM;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
 
 public class BaseTest {
     private WebDriver driver;
@@ -13,12 +13,9 @@ public class BaseTest {
 
     @BeforeClass
     public void setup(){
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = WDM.getChromeDriver().incognito().maxWindow().headLess().create();
         driver.get("https://www.efinancialcareers.com/");
         homepage = new HomePage(driver);
-        driver.manage().window().maximize();
-
     }
 
     @AfterClass
