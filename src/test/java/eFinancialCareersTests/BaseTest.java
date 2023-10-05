@@ -2,24 +2,29 @@ package eFinancialCareersTests;
 
 import eFinancialCareersPages.HomePage;
 import eFinancialCareersPages.WDM;
+import eFinancialCareersPages.ExtentReport;
+
+import com.aventstack.extentreports.ExtentReports;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 
 public class BaseTest {
-    private WebDriver driver;
+    protected ExtentReports extent = ExtentReport.getInstance();
+    WebDriver driver;
     public HomePage homepage;
 
-    @BeforeClass
+    @BeforeSuite
     public void setup(){
-        driver = WDM.getChromeDriver().incognito().maxWindow().headLess().create();
+        driver = WDM.getChromeDriver().incognito().maxWindow().create();
         driver.get("https://www.efinancialcareers.com/");
         homepage = new HomePage(driver);
     }
 
-    @AfterClass
+    @AfterSuite
     public void teardown(){
         driver.quit();
+        extent.flush();
     }
 }
