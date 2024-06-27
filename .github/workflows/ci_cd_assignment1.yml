@@ -35,5 +35,5 @@ jobs:
           sudo mv /home/runner/bin/chromedriver /usr/local/bin/chromedriver
           sudo chmod +x /usr/local/bin/chromedriver
 
-      - name: Run unit tests
+      - name: Run sign_in test
         run: mvn test
