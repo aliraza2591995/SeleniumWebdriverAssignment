@@ -16,5 +16,5 @@ jobs:
         uses: actions/checkout@v3.3.0
 
 
-      - name: run unit test
-        run: mvn test
+      - name: run build
+        run: mvn clean install
