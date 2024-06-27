@@ -7,7 +7,9 @@ import eFinancialCareersPages.ExtentReport;
 import com.aventstack.extentreports.ExtentReports;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 
 public class BaseTest {
@@ -15,14 +17,17 @@ public class BaseTest {
     WebDriver driver;
     public HomePage homepage;
 
-    @BeforeSuite
+//    @BeforeTest
     public void setup(){
+        System.out.println("Setting up WebDriver and HomePage...");
         driver = WDM.getChromeDriver().incognito().maxWindow().create();
+        System.out.println("WebDriver initialized: " + (driver != null));
         driver.get("https://www.efinancialcareers.com/");
         homepage = new HomePage(driver);
+        System.out.println("HomePage initialized: " + (homepage != null));;
     }
 
-    @AfterSuite
+//    @AfterTest
     public void teardown(){
         driver.quit();
         extent.flush();

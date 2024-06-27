@@ -1,12 +1,19 @@
 package eFinancialCareersTests;
 
+import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import eFinancialCareersPages.ExtentReport;
+import eFinancialCareersPages.HomePage;
+import eFinancialCareersPages.WDM;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -14,12 +21,36 @@ import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
 
-public class SignInTest extends BaseTest {
+public class SignInTest {
+    protected ExtentReports extent = ExtentReport.getInstance();
+    WebDriver driver;
+    public HomePage homepage;
+
+    @BeforeTest
+    public void setup(){
+        System.out.println("Setting up WebDriver and HomePage...");
+        driver = WDM.getChromeDriver().incognito().maxWindow().create();
+        System.out.println("WebDriver initialized: " + (driver != null));
+        driver.get("https://www.efinancialcareers.com/");
+        homepage = new HomePage(driver);
+        System.out.println("HomePage initialized: " + (homepage != null));;
+    }
+
+    @AfterTest
+    public void teardown(){
+        driver.quit();
+        extent.flush();
+    }
     @Test
     public void testSignIn() {
 
+        System.out.println("Starting testSignIn...");
+        if (homepage == null) {
+            System.out.println("Homepage is null in testSignIn!");
+            return;
+        }
         homepage.clickSignIn();
-        assertEquals(homepage.getOverlayText(), "Welcome to your next opportunity", "Didn't clicked signIn button correctly");
+        assertEquals(homepage.getOverlayText(), "Welcome to your next opportunity", "Didn't click signIn button correctly");
 
         homepage.enterEmail("aliomessi.19@gmail.com");
         homepage.enterPassword("Aliraza.10");

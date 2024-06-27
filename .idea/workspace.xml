@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7674a7ff-c18f-4fee-85d4-99c1e0c205ba" name="Changes" comment="Update POM">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eFinancialCareersPages/JobSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eFinancialCareersPages/JobSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eFinancialCareersPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eFinancialCareersPages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Reports/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Reports/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/JobApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/JobApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/SignInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/SignInTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +64,9 @@
     <setting file="jar://$MAVEN_REPOSITORY$/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar!/io/github/bonigarcia/wdm/managers/ChromeDriverManager.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/4.11.0/selenium-support-4.11.0.jar!/org/openqa/selenium/support/ui/FluentWait.class" root0="SKIP_INSPECTION" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -101,7 +108,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.JobApplicationTest">
+  <component name="RunManager" selected="TestNG.SignInTest.testSignIn">
     <configuration name="JobApplicationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver_java" />
       <extension name="coverage">
@@ -191,10 +198,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SignInTest.testSignIn" />
         <item itemvalue="TestNG.JobApplicationTest" />
         <item itemvalue="TestNG.JobApplicationTest.testJobSearch" />
         <item itemvalue="TestNG.SignInTest (2)" />
-        <item itemvalue="TestNG.SignInTest.testSignIn" />
         <item itemvalue="TestNG.SignInTest" />
       </list>
     </recent_temporary>
