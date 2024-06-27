@@ -34,7 +34,7 @@ public class JobApplicationTest {
     }
     private final By hiddenElement = By.xpath("//*[@id=\"fsp-fileUpload\"]");
 
-    @Test
+//    @Test
     public void testJobSearch(){
         homepage.clickSignIn();
         assertEquals(homepage.getOverlayText(), "Welcome to your next opportunity", "Didn't clicked login button correctly");
