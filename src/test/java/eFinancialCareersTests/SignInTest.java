@@ -29,7 +29,7 @@ public class SignInTest {
     @BeforeTest
     public void setup(){
         System.out.println("Setting up WebDriver and HomePage...");
-        driver = WDM.getChromeDriver().incognito().maxWindow().create();
+        driver = WDM.getChromeDriver().incognito().maxWindow().headLess().create();
         System.out.println("WebDriver initialized: " + (driver != null));
         driver.get("https://www.efinancialcareers.com/");
         homepage = new HomePage(driver);
