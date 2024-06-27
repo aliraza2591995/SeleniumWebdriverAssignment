@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7674a7ff-c18f-4fee-85d4-99c1e0c205ba" name="Changes" comment="Added WebDriverManager class.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/eFinancialCareersPages/ExtentReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7674a7ff-c18f-4fee-85d4-99c1e0c205ba" name="Changes" comment="Added Extent Reporting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/SignInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/SignInTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +25,11 @@
       <list>
         <option value="Ali Raza &lt;aliraza@emumba.com&gt;" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -76,12 +77,12 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "A:/Em/SeleniumWebdriverAssignment/src/main/java/eFinancialCareersPages",
-    "last_opened_file_path": "A:/Em/practice",
+    "last_opened_file_path": "A:/Em/SeleniumWebdriverAssignment",
     "onboarding.tips.debug.path": "A:/Em/SeleniumWebdriverAssignment/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -263,7 +264,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696404241879</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Extent Reporting">
+      <option name="closed" value="true" />
+      <created>1696522596469</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696522596469</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Extent Reporting">
+      <option name="closed" value="true" />
+      <created>1696522780061</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696522780061</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +288,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -283,7 +312,8 @@
     <MESSAGE value="Complete Job Application Process." />
     <MESSAGE value="Added WebDriverManager.chromedriver().setup();" />
     <MESSAGE value="Added WebDriverManager class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added WebDriverManager class." />
+    <MESSAGE value="Added Extent Reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Extent Reporting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
