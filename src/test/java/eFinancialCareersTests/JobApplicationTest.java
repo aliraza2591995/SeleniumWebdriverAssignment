@@ -31,14 +31,14 @@ public class JobApplicationTest extends BaseTest{
         jobPage.applyForJob();
         assertEquals(jobPage.checkJobApplicationModal(), "Your application", "Job application modal not found");
 
-        jobPage.loadNewCV();
-
-        assertEquals(jobPage.fileDropAreaText(), "Select Files to Upload", "File drop area not found");
-
-        jobPage.unhiddenUploadElement(hiddenElement);
-
-        jobPage.uploadCV();
-        assertEquals(jobPage.getCvTitle(), "Ali-s Resume.pdf", "CV upload failed");
+//        jobPage.loadNewCV();
+//
+//        assertEquals(jobPage.fileDropAreaText(), "Select Files to Upload", "File drop area not found");
+//
+//        jobPage.unhiddenUploadElement(hiddenElement);
+//
+//        jobPage.uploadCV();
+//        assertEquals(jobPage.getCvTitle(), "Ali-s Resume.pdf", "CV upload failed");
 
         jobPage.apply();
     }

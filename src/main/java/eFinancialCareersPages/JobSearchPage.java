@@ -11,7 +11,7 @@ import java.time.Duration;
 public class JobSearchPage {
     private final WebDriver driver;
     private final By searchResultText = By.xpath("//h1[contains(text(), 'QA Engineer')]");
-    private final By jobLink = By.xpath("//*[@id=\"rbVRgNtRyil1iTia\"]");
+    private final By jobLink = By.xpath("(//a[contains(text(), 'Apply now')])[1]");
     public JobSearchPage(WebDriver driver){
         this.driver = driver;
     }

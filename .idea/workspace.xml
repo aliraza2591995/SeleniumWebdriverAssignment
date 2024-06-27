@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7674a7ff-c18f-4fee-85d4-99c1e0c205ba" name="Changes" comment="Update POM">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eFinancialCareersPages/JobSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eFinancialCareersPages/JobSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/JobApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eFinancialCareersTests/JobApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,24 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SignInTest (2)">
+  <component name="RunManager" selected="TestNG.JobApplicationTest">
+    <configuration name="JobApplicationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="webdriver_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eFinancialCareersTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eFinancialCareersTests" />
+      <option name="MAIN_CLASS_NAME" value="eFinancialCareersTests.JobApplicationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JobApplicationTest.testJobSearch" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver_java" />
       <extension name="coverage">
@@ -113,23 +132,6 @@
       <option name="MAIN_CLASS_NAME" value="eFinancialCareersTests.JobApplicationTest" />
       <option name="METHOD_NAME" value="testJobSearch" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignInTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="webdriver_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eFinancialCareersTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="eFinancialCareersTests" />
-      <option name="MAIN_CLASS_NAME" value="eFinancialCareersTests.SignInTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -190,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.JobApplicationTest" />
+        <item itemvalue="TestNG.JobApplicationTest.testJobSearch" />
         <item itemvalue="TestNG.SignInTest (2)" />
         <item itemvalue="TestNG.SignInTest.testSignIn" />
         <item itemvalue="TestNG.SignInTest" />
-        <item itemvalue="TestNG.SignInTest (1)" />
-        <item itemvalue="TestNG.JobApplicationTest.testJobSearch" />
       </list>
     </recent_temporary>
   </component>
